@@ -658,7 +658,7 @@ const Home: NextPage = () => {
                         <button className='text-white'>
                           <Image src={DetailIcon} alt="DetailIcon" />
                         </button>
-                        <a href="https://twittter.com/" target="_blank" className='inline-block pt-2 text-white/[0.5] ml-2 px-2 rounded-md bg-[#FFFFFF1C]'>
+                        <a href="https://twittter.com/" target="_blank" rel="noreferrer" className='inline-block pt-2 text-white/[0.5] ml-2 px-2 rounded-md bg-[#FFFFFF1C]'>
                           <Image src={Twitter} alt="Twitter" />
                         </a>
                         <button className='text-white/[0.5] ml-2 flex items-center px-2 rounded-md bg-[#FFFFFF1C]'>
@@ -708,7 +708,7 @@ const Home: NextPage = () => {
                         <button className='text-white'>
                           <Image src={DetailIcon} alt="DetailIcon" />
                         </button>
-                        <a href="https://twittter.com/" target="_blank" className='inline-block pt-2 text-white/[0.5] ml-2 px-2 rounded-md bg-[#FFFFFF1C]'>
+                        <a href="https://twittter.com/" target="_blank" rel="noreferrer" className='inline-block pt-2 text-white/[0.5] ml-2 px-2 rounded-md bg-[#FFFFFF1C]'>
                           <Image src={Twitter} alt="Twitter" />
                         </a>
                         <button className='text-white/[0.5] ml-2 flex items-center px-2 rounded-md bg-[#FFFFFF1C]'>
@@ -758,7 +758,7 @@ const Home: NextPage = () => {
                         <button className='text-white'>
                           <Image src={DetailIcon} alt="DetailIcon" />
                         </button>
-                        <a href="https://twittter.com/" target="_blank" className='inline-block pt-2 text-white/[0.5] ml-2 px-2 rounded-md bg-[#FFFFFF1C]'>
+                        <a href="https://twittter.com/" target="_blank" rel="noreferrer" className='inline-block pt-2 text-white/[0.5] ml-2 px-2 rounded-md bg-[#FFFFFF1C]'>
                           <Image src={Twitter} alt="Twitter" />
                         </a>
                         <button className='text-white/[0.5] ml-2 flex items-center px-2 rounded-md bg-[#FFFFFF1C]'>
@@ -811,7 +811,7 @@ const Home: NextPage = () => {
                         <button className='text-white'>
                           <Image src={DetailIcon} alt="DetailIcon" />
                         </button>
-                        <a href="https://twittter.com/" target="_blank" className='inline-block pt-2 text-white/[0.5] ml-2 px-2 rounded-md bg-[#FFFFFF1C]'>
+                        <a href="https://twittter.com/" target="_blank" rel="noreferrer" className='inline-block pt-2 text-white/[0.5] ml-2 px-2 rounded-md bg-[#FFFFFF1C]'>
                           <Image src={Twitter} alt="Twitter" />
                         </a>
                         <button className='text-white/[0.5] ml-2 flex items-center px-2 rounded-md bg-[#FFFFFF1C]'>
