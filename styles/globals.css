@@ -16,7 +16,20 @@ body{
 .gradient-green-v2{
     background: linear-gradient(89.74deg, rgba(24, 150, 137, 0.36) 8.33%, rgba(3, 251, 181, 0.36) 99.77%);
 }
+.graph-btn-gradient-v1{
+    background: linear-gradient(122.84deg, rgba(254, 174, 151, 0.5) 0%, rgba(247, 128, 157, 0.5) 100%);
+}
+.graph-btn-gradient-v2{
+    background: linear-gradient(122.84deg, rgba(171, 250, 255, 0.5) 0%, rgba(113, 173, 255, 0.5) 100%);
+}
+.graph-btn-gradient-v3{
+    background: linear-gradient(122.84deg, rgba(88, 241, 187, 0.5) 0%, rgba(68, 213, 226, 0.5) 100%);
+}
 .box-clip-path{
     clip-path: polygon(20% 0%, 100% 0%, 80% 100%, 0% 100%);
     -webkit-clip-path: polygon(11% 0%, 100% 0%, 89% 100%, 0% 100%);
+}
+.apexcharts-gridline {
+  stroke-dasharray: 5;
+  opacity: 0.1 !important;
 }

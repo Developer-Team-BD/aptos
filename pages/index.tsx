@@ -17,8 +17,22 @@ import NFTThirteen from '../assets/NFTThirteenn.png';
 import NFTFourteen from '../assets/NFTFourteen.png';
 import NFTFivteen from '../assets/NFTFivteen.png';
 import NFTIcon from '../assets/nfticon.png';
+import DetailIcon from '../assets/details.svg';
+import Twitter from '../assets/Twitter-icon.svg';
+import Arrow from '../assets/Arrow.svg';
 import { Header } from '../components/Header/Header';
 import Sidebar from '../components/Sidebar/Sidebar';
+
+import dynamic from 'next/dynamic';
+const LineChart = dynamic(
+  () => import('../components/Charts/Homepage/LineChart'),
+  { ssr: false }
+)
+const DateTimeChart = dynamic(
+  () => import('../components/Charts/Homepage/DateTimeChart'),
+  { ssr: false }
+)
+
 
 const Home: NextPage = () => {
   return (
@@ -41,8 +55,7 @@ const Home: NextPage = () => {
           <Header/>
           <div className="pr-8 pt-8">
             <div className="max-w-[1650px] m-auto">
-              {/* <h1 className='text-4xl text-white'>Hello World</h1> */}
-              {/* NFT Section  */}
+              {/* ------------------------------------------------------ NFT Section ------------------------------------------------------ */}
               <div className="flex justify-between flex-wrap gap-[2%]">
                 {/* NFT Wrap One */}
                 <div className="p-4 bg-lightblack rounded-[18px] 2xl:basis-[23.5%] basis-[49%] mb-8">
@@ -191,7 +204,7 @@ const Home: NextPage = () => {
                   {/* End Card Row  */}
                 </div>
                 {/* End NFT Wrap One */}
-                {/* NFT Wrap One */}
+                {/* NFT Wrap Two */}
                 <div className="p-4 bg-lightblack rounded-[18px] 2xl:basis-[23.5%] basis-[49%] mb-8">
                   <div className="flex justify-between">
                     <h4 className='text-white text-[1.25rem]'>Top Social Buying</h4>
@@ -337,8 +350,8 @@ const Home: NextPage = () => {
                   </div>
                   {/* End Card Row  */}
                 </div>
-                {/* End NFT Wrap One */}
-                {/* NFT Wrap One */}
+                {/* End NFT Wrap Two */}
+                {/* NFT Wrap Three */}
                 <div className="p-4 bg-lightblack rounded-[18px] 2xl:basis-[23.5%]  basis-[49%] mb-8">
                   <div className="flex justify-between">
                     <h4 className='text-white text-[1.25rem]'>Top Movers</h4>
@@ -484,8 +497,8 @@ const Home: NextPage = () => {
                   </div>
                   {/* End Card Row  */}
                 </div>
-                {/* End NFT Wrap One */}
-                {/* NFT Wrap One */}
+                {/* End NFT Wrap Three */}
+                {/* NFT Wrap Four */}
                 <div className="p-4 bg-lightblack rounded-[18px] 2xl:basis-[23.5%] basis-[49%] mb-8">
                   <div className="flex justify-between">
                     <h4 className='text-white text-[1.25rem]'>Smart Outflow</h4>
@@ -631,10 +644,220 @@ const Home: NextPage = () => {
                   </div>
                   {/* End Card Row  */}
                 </div>
-                {/* End NFT Wrap One */}
+                {/* End NFT Wrap Four */}
               </div>
-              {/* End NFT Section  */}
-              {/* <h1 className='text-white text-4xl'>Hello</h1> */}
+              {/* ------------------------------------------------------ End NFT Section ------------------------------------------------------ */}
+              {/* ------------------------------------------------------ Graph Section ------------------------------------------------------ */}
+              {/* Graph Section */}
+                <div className="flex justify-between flex-wrap gap-[1%]">
+                  {/* Graph Wrap One */}
+                  <div className="p-4 bg-lightblack rounded-[18px] 2xl:basis-[49%] w-full mb-8">
+                    <div className="flex justify-between">
+                      <h4 className='text-white text-[1.25rem]'>Marketplace Volume</h4>
+                      <div className="flex">
+                        <button className='text-white'>
+                          <Image src={DetailIcon} alt="DetailIcon" />
+                        </button>
+                        <a href="https://twittter.com/" target="_blank" className='inline-block pt-2 text-white/[0.5] ml-2 px-2 rounded-md bg-[#FFFFFF1C]'>
+                          <Image src={Twitter} alt="Twitter" />
+                        </a>
+                        <button className='text-white/[0.5] ml-2 flex items-center px-2 rounded-md bg-[#FFFFFF1C]'>
+                          <span className='text-[0.875rem]'>1M</span>
+                          <Image src={Arrow} alt="arrow" className='ml-1' />  
+                        </button>
+                      </div>
+                    </div>
+                    <div className="flex justify-between mt-8 border border-[#FFFFFF05] p-1 rounded-md">
+                      <div className="bg-[#141414] basis-[19%] text-center py-3 rounded-lg">
+                        <p className='text-[#FFFFFF99]'>APT.V2</p>
+                        <p className='text-darkgreen font-bold text-[1.125rem] py-1'>37.92M</p>
+                        <p className='text-[#FFFFFF99]'>Total</p>
+                      </div>
+                      <div className="bg-[#141414] basis-[19%] text-center py-3 rounded-lg">
+                        <p className='text-[#FFFFFF99]'>Aptos</p>
+                        <p className='text-darkgreen font-bold text-[1.125rem] py-1'>230,109</p>
+                        <p className='text-[#FFFFFF99]'>Total</p>
+                      </div>
+                      <div className="bg-[#141414] basis-[19%] text-center py-3 rounded-lg">
+                        <p className='text-[#FFFFFF99]'>Topaz</p>
+                        <p className='text-darkgreen font-bold text-[1.125rem] py-1'>144,426</p>
+                        <p className='text-[#FFFFFF99]'>Total</p>
+                      </div>
+                      <div className="bg-[#141414] basis-[19%] text-center py-3 rounded-lg">
+                        <p className='text-[#FFFFFF99]'>Souffl3</p>
+                        <p className='text-darkgreen font-bold text-[1.125rem] py-1'>12,520</p>
+                        <p className='text-[#FFFFFF99]'>Total</p>
+                      </div>
+                      <div className="bg-[#141414] basis-[19%] text-center py-3 rounded-lg">
+                        <p className='text-[#FFFFFF99]'>Other</p>
+                        <p className='text-darkgreen font-bold text-[1.125rem] py-1'>32,152</p>
+                        <p className='text-[#FFFFFF99]'>Total</p>
+                      </div>
+                    </div>
+                    <div className="flex items-center justify-end text-white pt-6">
+                      <button className='text-[0.75rem] ml-2 py-1 px-3 bg-red rounded-full graph-btn-gradient-v1'>Topaz</button>
+                      <button className='text-[0.75rem] ml-2 py-1 px-3 bg-red rounded-full graph-btn-gradient-v2'>Bluemove</button>
+                      <button className='text-[0.75rem] ml-2 py-1 px-3 bg-red rounded-full graph-btn-gradient-v3'>souffl3</button>
+                    </div>
+                  </div>
+                  {/* Graph Wrap Two */}
+                  <div className="p-4 bg-lightblack rounded-[18px] 2xl:basis-[49%] w-full mb-8">
+                    <div className="flex justify-between">
+                      <h4 className='text-white text-[1.25rem]'>Marketplace Volume &#40;Sales&#41;</h4>
+                      <div className="flex">
+                        <button className='text-white'>
+                          <Image src={DetailIcon} alt="DetailIcon" />
+                        </button>
+                        <a href="https://twittter.com/" target="_blank" className='inline-block pt-2 text-white/[0.5] ml-2 px-2 rounded-md bg-[#FFFFFF1C]'>
+                          <Image src={Twitter} alt="Twitter" />
+                        </a>
+                        <button className='text-white/[0.5] ml-2 flex items-center px-2 rounded-md bg-[#FFFFFF1C]'>
+                          <span className='text-[0.875rem]'>1M</span>
+                          <Image src={Arrow} alt="arrow" className='ml-1' />  
+                        </button>
+                      </div>
+                    </div>
+                    <div className="flex justify-between mt-8 border border-[#FFFFFF05] p-1 rounded-md">
+                      <div className="bg-[#141414] basis-[19%] text-center py-3 rounded-lg">
+                        <p className='text-[#FFFFFF99]'>APT.V2</p>
+                        <p className='text-darkgreen font-bold text-[1.125rem] py-1'>37.92M</p>
+                        <p className='text-[#FFFFFF99]'>Total</p>
+                      </div>
+                      <div className="bg-[#141414] basis-[19%] text-center py-3 rounded-lg">
+                        <p className='text-[#FFFFFF99]'>Aptos</p>
+                        <p className='text-darkgreen font-bold text-[1.125rem] py-1'>230,109</p>
+                        <p className='text-[#FFFFFF99]'>Total</p>
+                      </div>
+                      <div className="bg-[#141414] basis-[19%] text-center py-3 rounded-lg">
+                        <p className='text-[#FFFFFF99]'>Topaz</p>
+                        <p className='text-darkgreen font-bold text-[1.125rem] py-1'>144,426</p>
+                        <p className='text-[#FFFFFF99]'>Total</p>
+                      </div>
+                      <div className="bg-[#141414] basis-[19%] text-center py-3 rounded-lg">
+                        <p className='text-[#FFFFFF99]'>Souffl3</p>
+                        <p className='text-darkgreen font-bold text-[1.125rem] py-1'>12,520</p>
+                        <p className='text-[#FFFFFF99]'>Total</p>
+                      </div>
+                      <div className="bg-[#141414] basis-[19%] text-center py-3 rounded-lg">
+                        <p className='text-[#FFFFFF99]'>Other</p>
+                        <p className='text-darkgreen font-bold text-[1.125rem] py-1'>32,152</p>
+                        <p className='text-[#FFFFFF99]'>Total</p>
+                      </div>
+                    </div>
+                    <div className="flex items-center justify-end text-white pt-6">
+                      <button className='text-[0.75rem] ml-2 py-1 px-3 bg-red rounded-full graph-btn-gradient-v1'>Topaz</button>
+                      <button className='text-[0.75rem] ml-2 py-1 px-3 bg-red rounded-full graph-btn-gradient-v2'>Bluemove</button>
+                      <button className='text-[0.75rem] ml-2 py-1 px-3 bg-red rounded-full graph-btn-gradient-v3'>souffl3</button>
+                    </div>
+                  </div>
+                  {/* Graph Wrap Three */}
+                  <div className="p-4 bg-lightblack rounded-[18px] 2xl:basis-[49%] w-full mb-8">
+                    <div className="flex justify-between">
+                      <h4 className='text-white text-[1.25rem]'>Daily Transacting Owners</h4>
+                      <div className="flex">
+                        <button className='text-white'>
+                          <Image src={DetailIcon} alt="DetailIcon" />
+                        </button>
+                        <a href="https://twittter.com/" target="_blank" className='inline-block pt-2 text-white/[0.5] ml-2 px-2 rounded-md bg-[#FFFFFF1C]'>
+                          <Image src={Twitter} alt="Twitter" />
+                        </a>
+                        <button className='text-white/[0.5] ml-2 flex items-center px-2 rounded-md bg-[#FFFFFF1C]'>
+                          <span className='text-[0.875rem]'>1M</span>
+                          <Image src={Arrow} alt="arrow" className='ml-1' />  
+                        </button>
+                      </div>
+                    </div>
+                    <div className="flex justify-between mt-8 border border-[#FFFFFF05] p-1 rounded-md">
+                      <div className="bg-[#141414] basis-[19%] text-center py-3 rounded-lg">
+                        <p className='text-[#FFFFFF99]'>APT.V2</p>
+                        <p className='text-darkgreen font-bold text-[1.125rem] py-1'>37.92M</p>
+                        <p className='text-[#FFFFFF99]'>Total</p>
+                      </div>
+                      <div className="bg-[#141414] basis-[19%] text-center py-3 rounded-lg">
+                        <p className='text-[#FFFFFF99]'>Aptos</p>
+                        <p className='text-darkgreen font-bold text-[1.125rem] py-1'>230,109</p>
+                        <p className='text-[#FFFFFF99]'>Total</p>
+                      </div>
+                      <div className="bg-[#141414] basis-[19%] text-center py-3 rounded-lg">
+                        <p className='text-[#FFFFFF99]'>Topaz</p>
+                        <p className='text-darkgreen font-bold text-[1.125rem] py-1'>144,426</p>
+                        <p className='text-[#FFFFFF99]'>Total</p>
+                      </div>
+                      <div className="bg-[#141414] basis-[19%] text-center py-3 rounded-lg">
+                        <p className='text-[#FFFFFF99]'>Souffl3</p>
+                        <p className='text-darkgreen font-bold text-[1.125rem] py-1'>12,520</p>
+                        <p className='text-[#FFFFFF99]'>Total</p>
+                      </div>
+                      <div className="bg-[#141414] basis-[19%] text-center py-3 rounded-lg">
+                        <p className='text-[#FFFFFF99]'>Other</p>
+                        <p className='text-darkgreen font-bold text-[1.125rem] py-1'>32,152</p>
+                        <p className='text-[#FFFFFF99]'>Total</p>
+                      </div>
+                    </div>
+                    <div className="flex items-center justify-end text-white pt-6">
+                      <button className='text-[0.75rem] ml-2 py-1 px-3 bg-red rounded-full graph-btn-gradient-v1'>Topaz</button>
+                      <button className='text-[0.75rem] ml-2 py-1 px-3 bg-red rounded-full graph-btn-gradient-v2'>Bluemove</button>
+                      <button className='text-[0.75rem] ml-2 py-1 px-3 bg-red rounded-full graph-btn-gradient-v3'>souffl3</button>
+                    </div>
+                    <div className='mt-4 min-h-[350px]'>
+                      <LineChart/>
+                    </div>
+                  </div>
+                  {/* Graph Wrap Four */}
+                  <div className="p-4 bg-lightblack rounded-[18px] 2xl:basis-[49%] w-full mb-8">
+                    <div className="flex justify-between">
+                      <h4 className='text-white text-[1.25rem]'>Daily NFT Mints</h4>
+                      <div className="flex">
+                        <button className='text-white'>
+                          <Image src={DetailIcon} alt="DetailIcon" />
+                        </button>
+                        <a href="https://twittter.com/" target="_blank" className='inline-block pt-2 text-white/[0.5] ml-2 px-2 rounded-md bg-[#FFFFFF1C]'>
+                          <Image src={Twitter} alt="Twitter" />
+                        </a>
+                        <button className='text-white/[0.5] ml-2 flex items-center px-2 rounded-md bg-[#FFFFFF1C]'>
+                          <span className='text-[0.875rem]'>1M</span>
+                          <Image src={Arrow} alt="arrow" className='ml-1' />  
+                        </button>
+                      </div>
+                    </div>
+                    <div className="flex justify-between mt-8 border border-[#FFFFFF05] p-1 rounded-md">
+                      <div className="bg-[#141414] basis-[19%] text-center py-3 rounded-lg">
+                        <p className='text-[#FFFFFF99]'>APT.V2</p>
+                        <p className='text-darkgreen font-bold text-[1.125rem] py-1'>37.92M</p>
+                        <p className='text-[#FFFFFF99]'>Total</p>
+                      </div>
+                      <div className="bg-[#141414] basis-[19%] text-center py-3 rounded-lg">
+                        <p className='text-[#FFFFFF99]'>Aptos</p>
+                        <p className='text-darkgreen font-bold text-[1.125rem] py-1'>230,109</p>
+                        <p className='text-[#FFFFFF99]'>Total</p>
+                      </div>
+                      <div className="bg-[#141414] basis-[19%] text-center py-3 rounded-lg">
+                        <p className='text-[#FFFFFF99]'>Topaz</p>
+                        <p className='text-darkgreen font-bold text-[1.125rem] py-1'>144,426</p>
+                        <p className='text-[#FFFFFF99]'>Total</p>
+                      </div>
+                      <div className="bg-[#141414] basis-[19%] text-center py-3 rounded-lg">
+                        <p className='text-[#FFFFFF99]'>Souffl3</p>
+                        <p className='text-darkgreen font-bold text-[1.125rem] py-1'>12,520</p>
+                        <p className='text-[#FFFFFF99]'>Total</p>
+                      </div>
+                      <div className="bg-[#141414] basis-[19%] text-center py-3 rounded-lg">
+                        <p className='text-[#FFFFFF99]'>Other</p>
+                        <p className='text-darkgreen font-bold text-[1.125rem] py-1'>32,152</p>
+                        <p className='text-[#FFFFFF99]'>Total</p>
+                      </div>
+                    </div>
+                    <div className="flex items-center justify-end text-white pt-6">
+                      <button className='text-[0.75rem] ml-2 py-1 px-3 bg-red rounded-full graph-btn-gradient-v1'>Topaz</button>
+                      <button className='text-[0.75rem] ml-2 py-1 px-3 bg-red rounded-full graph-btn-gradient-v2'>Bluemove</button>
+                      <button className='text-[0.75rem] ml-2 py-1 px-3 bg-red rounded-full graph-btn-gradient-v3'>souffl3</button>
+                    </div>
+                    <div className='mt-4 min-h-[350px]'>
+                      <DateTimeChart/>
+                    </div>
+                  </div>
+                </div>
+              {/* ------------------------------------------------------ End Graph Section ------------------------------------------------------ */}
             </div>
           </div>
         </div>
