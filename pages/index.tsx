@@ -32,6 +32,14 @@ const DateTimeChart = dynamic(
   () => import('../components/Charts/Homepage/DateTimeChart'),
   { ssr: false }
 )
+const ColumnChart = dynamic(
+  () => import('../components/Charts/Homepage/ColumnChart'),
+  { ssr: false }
+)
+const BarChart = dynamic(
+  () => import('../components/Charts/Homepage/BarChart'),
+  { ssr: false }
+)
 
 
 const Home: NextPage = () => {
@@ -699,6 +707,9 @@ const Home: NextPage = () => {
                       <button className='text-[0.75rem] ml-2 py-1 px-3 bg-red rounded-full graph-btn-gradient-v2'>Bluemove</button>
                       <button className='text-[0.75rem] ml-2 py-1 px-3 bg-red rounded-full graph-btn-gradient-v3'>souffl3</button>
                     </div>
+                    <div className='mt-4 min-h-[375px]'>
+                      <BarChart/>
+                    </div>
                   </div>
                   {/* Graph Wrap Two */}
                   <div className="p-4 bg-lightblack rounded-[18px] 2xl:basis-[49%] w-full mb-8">
@@ -748,6 +759,9 @@ const Home: NextPage = () => {
                       <button className='text-[0.75rem] ml-2 py-1 px-3 bg-red rounded-full graph-btn-gradient-v1'>Topaz</button>
                       <button className='text-[0.75rem] ml-2 py-1 px-3 bg-red rounded-full graph-btn-gradient-v2'>Bluemove</button>
                       <button className='text-[0.75rem] ml-2 py-1 px-3 bg-red rounded-full graph-btn-gradient-v3'>souffl3</button>
+                    </div>
+                    <div className='mt-4 min-h-[375px]'>
+                      <ColumnChart/>
                     </div>
                   </div>
                   {/* Graph Wrap Three */}
@@ -799,7 +813,7 @@ const Home: NextPage = () => {
                       <button className='text-[0.75rem] ml-2 py-1 px-3 bg-red rounded-full graph-btn-gradient-v2'>Bluemove</button>
                       <button className='text-[0.75rem] ml-2 py-1 px-3 bg-red rounded-full graph-btn-gradient-v3'>souffl3</button>
                     </div>
-                    <div className='mt-4 min-h-[350px]'>
+                    <div className='mt-4 min-h-[375px]'>
                       <LineChart/>
                     </div>
                   </div>
@@ -852,7 +866,7 @@ const Home: NextPage = () => {
                       <button className='text-[0.75rem] ml-2 py-1 px-3 bg-red rounded-full graph-btn-gradient-v2'>Bluemove</button>
                       <button className='text-[0.75rem] ml-2 py-1 px-3 bg-red rounded-full graph-btn-gradient-v3'>souffl3</button>
                     </div>
-                    <div className='mt-4 min-h-[350px]'>
+                    <div className='mt-4 min-h-[375px]'>
                       <DateTimeChart/>
                     </div>
                   </div>
