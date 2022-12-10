@@ -604,7 +604,7 @@ const Social: NextPage = () => {
                                     2h
                                 </p>
                                 <p className="text-[0.75rem] text-[#FFFFFFB2] flex items-center">
-                                    Listed <a href="/" className="inline-block mx-1 underline">Aptos</a>
+                                    Listed <a href="/" target="_blank" rel="noreferrer" className="inline-block mx-1 underline">Aptos</a>
                                     for 244.00
                                 </p>
                                 </div>
@@ -625,7 +625,7 @@ const Social: NextPage = () => {
                                     2h
                                 </p>
                                 <p className="text-[0.75rem] text-[#FFFFFFB2] flex items-center">
-                                    Listed <a href="/" className="inline-block mx-1 underline">Aptos</a>
+                                    Listed <a href="/" target="_blank" rel="noreferrer" className="inline-block mx-1 underline">Aptos</a>
                                     for 244.00
                                 </p>
                                 </div>
@@ -646,7 +646,7 @@ const Social: NextPage = () => {
                                     2h
                                 </p>
                                 <p className="text-[0.75rem] text-[#FFFFFFB2] flex items-center">
-                                    Listed <a href="/" className="inline-block mx-1 underline">Aptos</a>
+                                    Listed <a href="/" target="_blank" rel="noreferrer" className="inline-block mx-1 underline">Aptos</a>
                                     for 244.00
                                 </p>
                                 </div>
@@ -667,7 +667,7 @@ const Social: NextPage = () => {
                                     2h
                                 </p>
                                 <p className="text-[0.75rem] text-[#FFFFFFB2] flex items-center">
-                                    Listed <a href="/" className="inline-block mx-1 underline">Aptos</a>
+                                    Listed <a href="/" target="_blank" rel="noreferrer" className="inline-block mx-1 underline">Aptos</a>
                                     for 244.00
                                 </p>
                                 </div>
@@ -688,7 +688,7 @@ const Social: NextPage = () => {
                                     2h
                                 </p>
                                 <p className="text-[0.75rem] text-[#FFFFFFB2] flex items-center">
-                                    Listed <a href="/" className="inline-block mx-1 underline">Aptos</a>
+                                    Listed <a href="/" target="_blank" rel="noreferrer" className="inline-block mx-1 underline">Aptos</a>
                                     for 244.00
                                 </p>
                                 </div>
@@ -709,7 +709,7 @@ const Social: NextPage = () => {
                                     2h
                                 </p>
                                 <p className="text-[0.75rem] text-[#FFFFFFB2] flex items-center">
-                                    Listed <a href="/" className="inline-block mx-1 underline">Aptos</a>
+                                    Listed <a href="/" target="_blank" rel="noreferrer" className="inline-block mx-1 underline">Aptos</a>
                                     for 244.00
                                 </p>
                                 </div>
@@ -730,7 +730,7 @@ const Social: NextPage = () => {
                                     2h
                                 </p>
                                 <p className="text-[0.75rem] text-[#FFFFFFB2] flex items-center">
-                                    Listed <a href="/" className="inline-block mx-1 underline">Aptos</a>
+                                    Listed <a href="/" target="_blank" rel="noreferrer" className="inline-block mx-1 underline">Aptos</a>
                                     for 244.00
                                 </p>
                                 </div>
@@ -751,7 +751,7 @@ const Social: NextPage = () => {
                                     2h
                                 </p>
                                 <p className="text-[0.75rem] text-[#FFFFFFB2] flex items-center">
-                                    Listed <a href="/" className="inline-block mx-1 underline">Aptos</a>
+                                    Listed <a href="/" target="_blank" rel="noreferrer" className="inline-block mx-1 underline">Aptos</a>
                                     for 244.00
                                 </p>
                                 </div>
@@ -772,7 +772,7 @@ const Social: NextPage = () => {
                                     2h
                                 </p>
                                 <p className="text-[0.75rem] text-[#FFFFFFB2] flex items-center">
-                                    Listed <a href="/" className="inline-block mx-1 underline">Aptos</a>
+                                    Listed <a href="/" target="_blank" rel="noreferrer" className="inline-block mx-1 underline">Aptos</a>
                                     for 244.00
                                 </p>
                                 </div>
@@ -793,7 +793,7 @@ const Social: NextPage = () => {
                                     2h
                                 </p>
                                 <p className="text-[0.75rem] text-[#FFFFFFB2] flex items-center">
-                                    Listed <a href="/" className="inline-block mx-1 underline">Aptos</a>
+                                    Listed <a href="/" target="_blank" rel="noreferrer" className="inline-block mx-1 underline">Aptos</a>
                                     for 244.00
                                 </p>
                                 </div>
@@ -814,7 +814,7 @@ const Social: NextPage = () => {
                                     2h
                                 </p>
                                 <p className="text-[0.75rem] text-[#FFFFFFB2] flex items-center">
-                                    Listed <a href="/" className="inline-block mx-1 underline">Aptos</a>
+                                    Listed <a href="/" target="_blank" rel="noreferrer" className="inline-block mx-1 underline">Aptos</a>
                                     for 244.00
                                 </p>
                                 </div>
@@ -835,7 +835,7 @@ const Social: NextPage = () => {
                                     2h
                                 </p>
                                 <p className="text-[0.75rem] text-[#FFFFFFB2] flex items-center">
-                                    Listed <a href="/" className="inline-block mx-1 underline">Aptos</a>
+                                    Listed <a href="/" target="_blank" rel="noreferrer" className="inline-block mx-1 underline">Aptos</a>
                                     for 244.00
                                 </p>
                                 </div>
