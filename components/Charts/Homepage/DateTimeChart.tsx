@@ -295,17 +295,27 @@ export default function DateTimeChart() {
           colors: ["#b037b3"],
 
           chart: {
+            type:"area",
+            stacked: false,
             toolbar: {
               show: false,
+            },
+            zoom: {
+              type: 'x',
+              enabled: true,
+              autoScaleYaxis: true
             },
           },
           dataLabels: {
             enabled: false,
           },
+          markers: {
+            size: 0,
+          },
           yaxis: {
             labels: {
-              formatter: (val) => {
-                return `${val} btc`;
+              formatter: function (val) {
+                return (val / 1000000).toFixed(1);
               },
               style: {
                 colors: ["#FFFFFF99"],
@@ -315,7 +325,7 @@ export default function DateTimeChart() {
             },
           },
           xaxis: {
-            categories: ["Nov 11","Nov 12","Nov 13","Nov 114","Nov 15","Nov 16","Nov 17"],
+            type: 'datetime',
             labels: {
               show: true,
               style: {
@@ -339,19 +349,26 @@ export default function DateTimeChart() {
             strokeDashArray: 7,
             position: 'back',
           },
+          tooltip: {
+            shared: false,
+            y: {
+              formatter: function (val) {
+                return (val / 1000000).toFixed(0)
+              }
+            }
+          },
           fill: {
             gradient: {
               shade: 'light',
               type: "vertical",
               shadeIntensity: 0.5,
-              gradientToColors: ["#b037b3", "#000000"], // optional, if not defined - uses the shades of same color in series
+              gradientToColors: ["#b037b3", "#000000"],
               inverseColors: true,
               opacityFrom: 0.8,
               opacityTo: 0.1,
               stops: [0, 100, 0],
               colorStops: []
             }
-            // colors: ["#58F1BB"],
           },
         }}
       ></Chart>

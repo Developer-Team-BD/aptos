@@ -675,7 +675,7 @@ const Home: NextPage = () => {
                         </button>
                       </div>
                     </div>
-                    <div className="flex justify-between mt-8 border border-[#FFFFFF05] p-1 rounded-md">
+                    <div className="flex justify-between mt-8 border border-[#FFFFFF05] p-1 rounded-md flex-wrap">
                       <div className="bg-[#141414] basis-[19%] text-center py-3 rounded-lg">
                         <p className='text-[#FFFFFF99]'>APT.V2</p>
                         <p className='text-darkgreen font-bold text-[1.125rem] py-1'>37.92M</p>

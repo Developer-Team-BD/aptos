@@ -9,7 +9,9 @@ body{
     font-family: 'Nunito', sans-serif;
     background-color: black;
 }
-
+.hide-table-wrap::-webkit-scrollbar {
+  display: none;
+}
 .gradient-green{
     background: linear-gradient(89.74deg, #189689 8.33%, #03FBB5 99.77%);
 }
@@ -32,4 +34,39 @@ body{
 .apexcharts-gridline {
   stroke-dasharray: 5;
   opacity: 0.1 !important;
+}
+
+input[type="radio"] + label span {
+    transition: background .2s,
+      transform .2s;
+}
+
+#radio1:checked + label span {
+  background: linear-gradient(122.84deg, #F7809D 0%, #F7809D 100%);
+  box-shadow: 0px 0px 0px 2px #141414 inset;
+}
+#radio2:checked + label span {
+  background: linear-gradient(122.84deg, #58F1BB 0%, #44D5E2 100%);
+  box-shadow: 0px 0px 0px 2px #141414 inset;
+}
+#radio3:checked + label span {
+  background: linear-gradient(122.84deg, #ABFAFF 0%, #71ADFF 100%);
+  box-shadow: 0px 0px 0px 2px #141414 inset;
+}
+#radio4:checked + label span {
+  background: #B5A9FE;
+  box-shadow: 0px 0px 0px 2px #141414 inset;
+}
+
+#radio1:checked + label{
+   color: #F7809D;
+}
+#radio2:checked + label{
+   color: #58F1BB;
+}
+#radio3:checked + label{
+   color: #71ADFF;
+}
+#radio4:checked + label{
+   color: #B5A9FE;
 }

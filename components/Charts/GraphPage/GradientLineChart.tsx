@@ -1,25 +1,25 @@
 import React from "react";
 import Chart from "react-apexcharts";
 
-export default function LineChart() {
+export default function GradientLineChart() {
   return (
     <>
       <Chart
-        type="area"
+        type="line"
         height="100%"
         width="100%"
         forecolor="#58F1BB"
         series={[
           {
             name: "sale",
-            data: [
-              50, 180, 90, 400, 120, 250, 300,
-            ],
+            data: [4, 3, 10, 9, 21, 19, 22, 9, 12, 7, 19, 5, 13, 9, 17, 2, 7, 5],
           },
         ]}
         options={{
           colors: ["#58F1BB"],
-
+          forecastDataPoints:{
+            count : 7
+          },
           chart: {
             toolbar: {
               show: false,
@@ -29,10 +29,9 @@ export default function LineChart() {
             enabled: false,
           },
           yaxis: {
-            labels: {
-              formatter: (val) => {
-                return `${val} btc`;
-              },
+              min: 0,
+              max: 25,
+              labels: {
               style: {
                 colors: ["#FFFFFF99"],
                 fontFamily :"Nunito",
@@ -41,20 +40,25 @@ export default function LineChart() {
             },
           },
           xaxis: {
-            categories: ["Nov 11","Nov 12","Nov 13","Nov 114","Nov 15","Nov 16","Nov 17"],
-            labels: {
+            type: 'datetime',
+            categories: ['1/11/2000', '2/11/2000', '3/11/2000', '4/11/2000', '5/11/2000', '6/11/2000', '7/11/2000', '8/11/2000', '9/11/2000', '10/11/2000', '11/11/2000', '12/11/2000', '1/11/2001', '2/11/2001', '3/11/2001','4/11/2001' ,'5/11/2001' ,'6/11/2001'],
+            tickAmount: 10,
+            labels : {
+              formatter: (val, timestamp:any, opts) => {
+                return opts.dateFormatter(new Date(timestamp), 'dd MMM')
+              },
               show: true,
               style: {
                 colors: ["#FFFFFF99"],
                 fontFamily :"Nunito"
               },
             },
-            axisBorder: {
+             axisBorder: {
               show: false,
             },
             axisTicks: {
               show: false,
-            },  
+            },            
           },
           stroke: {
             curve: "smooth",
@@ -67,17 +71,16 @@ export default function LineChart() {
           },
           fill: {
             gradient: {
-              shade: 'light',
+              shade: 'dark',
               type: "vertical",
-              shadeIntensity: 0.5,
-              gradientToColors: ["#47CAB475", "#000000"], // optional, if not defined - uses the shades of same color in series
+              shadeIntensity: 1,
+              gradientToColors: ["#2F6444"],
               inverseColors: true,
-              opacityFrom: 0.8,
-              opacityTo: 0.1,
+              opacityFrom: 1,
+              opacityTo: 1,
               stops: [0, 100, 0],
               colorStops: []
             }
-            // colors: ["#58F1BB"],
           },
         }}
       ></Chart>
